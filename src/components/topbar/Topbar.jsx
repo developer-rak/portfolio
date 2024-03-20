@@ -8,7 +8,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
     <div className={"topbar " + (menuOpen && "active")}>
       <div className="wrapper">
         <div className="left">
-          <a href="#intro" className='logo'>developer-rak.</a>
+          <a href="#intro" className='logo'> developer-rak. </a>
           <div className="itemContainer">
             <PersonIcon className='icon'/>
             <span>+92 311 0349090</span>
