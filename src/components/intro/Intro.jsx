@@ -11,8 +11,10 @@ export default function Intro() {
 
   useEffect(() => {
     init(textRef.current, { 
-        showCursor: false, 
-        strings: ['Front-End', 'UI/Ux', 'Content'],
+        showCursor: true,
+        backDelay: 1500,
+        backSpeed: 60,
+        strings: ['Front-End', 'UI / Ux', 'Content'],
       })
   }, [])
 
