@@ -22,7 +22,7 @@ export default function Testimonials() {
       title: "Senior Developer",
       img: "https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       icon: Youtube,
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, vel!",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, vel!", featured: true,
     },
     {
       id: 1,
@@ -39,7 +39,7 @@ export default function Testimonials() {
       <h1>Testimonials</h1>
       <div className="container">
         {data.map((d) => (
-          <div className="card">
+          <div className={d.featured ? "card featured" : "card"}>
             <div className="top">
               <img className='left' src={RightArrow} alt="" />
               <img className='user' src={d.img} alt="" />

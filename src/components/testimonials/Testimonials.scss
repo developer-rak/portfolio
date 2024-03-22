@@ -1,3 +1,5 @@
+@import '../../global.scss';
+
 .testimonials {
    background-color: white;
    display: flex;
@@ -6,6 +8,10 @@
 
    h1 {
       font-size: 50px;
+
+      @include mobile {
+         font-size: 20px;             
+      }
    }
 
    .container {
@@ -14,6 +20,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
+      @include mobile {
+         flex-direction: column;     
+      }
 
       .card {
          width: 250px;
@@ -24,6 +34,20 @@
          flex-direction: column;
          justify-content: space-between;
          padding: 20px;
+         transition: all 1s ease;
+
+         @include mobile {
+            margin: 15px;          
+         }
+
+         &.featured {
+            width: 300px;
+            height: 75%;
+            margin: 0 30px;
+         }
+         &:hover {
+            transform: scale(1.1);
+         }
 
          .top {
             display: flex;
